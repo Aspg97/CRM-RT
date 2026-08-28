@@ -1,5 +1,15 @@
+:root {
+  --font-tittle: "genos", sans-serif;
+  --font-text: "quicksand", sans-serif;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: "quicksand", sans-serif;
+  font-size: 12px;
 }

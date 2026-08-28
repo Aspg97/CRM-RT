@@ -9,6 +9,11 @@ import Informes from "./pages/Informes";
 import Pagos from "./pages/Pagos";
 import Ups from "./pages/Ups";
 
+import "@fontsource/megrim";
+import "@fontsource/cal-sans";
+import "@fontsource/genos";
+import "@fontsource/quicksand";
+
 function App() {
   return (
     <>
