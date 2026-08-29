@@ -6,7 +6,7 @@
 
 .head-panel {
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 40% 50% 10%;
   background-color: #1339ad;
   color: #fff;
 }
@@ -72,6 +72,10 @@ h2 {
       /* Sombra suave */ #cc0000 100% /* Reflejo final */
     )
     1;
+}
+
+.profile {
+  justify-self: end;
 }
 
 .container-gen-panel {

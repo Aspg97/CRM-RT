@@ -12,8 +12,12 @@ function UserProviderWrapper(props) {
 
   const [user, setUser] = useState(userLog);
 
+  const logout = () => {
+    setUser(null);
+  };
+
   return (
-    <UserContext.Provider value={{ user, setUser }}>
+    <UserContext.Provider value={{ user, logout }}>
       {props.children}
     </UserContext.Provider>
   );

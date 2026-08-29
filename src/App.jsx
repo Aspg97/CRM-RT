@@ -8,6 +8,7 @@ import Documentos from "./pages/Documentos";
 import Informes from "./pages/Informes";
 import Pagos from "./pages/Pagos";
 import Ups from "./pages/Ups";
+import Login from "./pages/Login";
 
 import "@fontsource/megrim";
 import "@fontsource/cal-sans";
@@ -26,6 +27,7 @@ function App() {
         <Route path="/informes" element={<Informes />} />
         <Route path="/pagos" element={<Pagos />} />
         <Route path="/ups" element={<Ups />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </>
   );

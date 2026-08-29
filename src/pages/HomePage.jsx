@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { UserContext } from "../context/user.context";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import "./HomePage.css";
 import Footer from "../components/Footer";
 import logo_RT from "../assets/logo_RT.png";
@@ -10,9 +10,12 @@ import ordenDeTrabajo from "../assets/ordenDeTrabajo.svg";
 import pagos from "../assets/pagos.svg";
 import proveedores from "../assets/proveedores.svg";
 import oferta from "../assets/oferta.svg";
+import BtnLogout from "../components/BtnLogout";
 
 function HomePage() {
   const { user } = useContext(UserContext);
+
+  if (!user?.id) return <Navigate to={"/login"} />;
   return (
     <>
       <div className="container-all">
@@ -26,11 +29,11 @@ function HomePage() {
             </div>
           </div>
           <div className="greeting">
-            <p>
-              Hola<span> {user.name}</span>!
-            </p>
+            <p>Hola {user && <span>{user.name}</span>}!</p>
           </div>
-          <div className="profile"></div>
+          <div className="profile">
+            <BtnLogout />
+          </div>
         </div>
         <div className="container-gen-panel">
           <h2>Panel de Control</h2>
