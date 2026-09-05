@@ -1,23 +1,23 @@
-import { createContext, use, useState } from "react";
+import { createContext, useState } from "react";
 
 const UserContext = createContext();
 
 function UserProviderWrapper(props) {
   const userLog = {
-    id: "1234567890",
+    id: "1234",
     name: "Anthony",
     lastName: "Pacheco",
-    admin: true,
+    log: false,
   };
 
   const [user, setUser] = useState(userLog);
 
   const logout = () => {
-    setUser(null);
+    setUser({ ...user, log: false });
   };
 
   return (
-    <UserContext.Provider value={{ user, logout }}>
+    <UserContext.Provider value={{ user, logout, setUser }}>
       {props.children}
     </UserContext.Provider>
   );

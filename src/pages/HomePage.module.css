@@ -57,6 +57,7 @@
 
 .panel-title {
   padding-top: 30px;
+  font-weight: normal;
   color: #fff;
   font-family: var(--font-tittle);
   text-align: center;

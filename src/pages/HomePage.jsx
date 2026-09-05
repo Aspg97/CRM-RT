@@ -15,7 +15,7 @@ import BtnLogout from "../components/BtnLogout";
 function HomePage() {
   const { user } = useContext(UserContext);
 
-  if (!user?.id) return <Navigate to={"/login"} />;
+  //if (!user.log) return <Navigate to={"/login"} />;
   return (
     <>
       <div className={styles["container-all"]}>

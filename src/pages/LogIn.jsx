@@ -1,10 +1,35 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { useNavigate } from "react-router-dom";
+import { UserContext } from "../context/user.context";
 import styles from "./LogIn.module.css";
 import logo_RT from "../assets/logo_RT.png";
+import userLog from "../assets/user_log.svg";
+import passLog from "../assets/pass_log.svg";
 
 function LogIn() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const { user, setUser } = useContext(UserContext);
+  const navigate = useNavigate();
+
+  const handleUsername = (e) => {
+    setUsername(e.target.value);
+  };
+
+  const handlePassword = (e) => {
+    setPassword(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (username && password) {
+      password === user.id
+        ? (setUser({ ...user, log: true }), navigate("/"))
+        : alert("Contraseña incorrecta. Por favor, inténtelo de nuevo.");
+    } else {
+      alert("Por favor, complete todos los campos.");
+    }
+  };
 
   return (
     <>
@@ -21,33 +46,33 @@ function LogIn() {
           <h2 className={styles["title-login-form"]}>Identifíquese</h2>
           <div className={styles["container-login-inputs"]}>
             <div className={styles["form-group"]}>
-              <label htmlFor="username" className={styles["form-label-login"]}>
-                Nombre de usuario:
-              </label>
+              <img src={userLog} alt="user" width={19} />
               <input
                 type="text"
                 id="username"
                 name="username"
                 value={username}
-                onChange={(e) => setUsername(e.target.value)}
+                onChange={handleUsername}
                 className={styles["form-input-login"]}
               />
             </div>
             <div className={styles["form-group"]}>
-              <label htmlFor="password" className={styles["form-label-login"]}>
-                Contraseña:
-              </label>
+              <img src={passLog} alt="pass" width={23} />
               <input
                 type="password"
                 id="password"
                 name="password"
                 value={password}
-                onChange={(e) => setPassword(e.target.value)}
+                onChange={handlePassword}
                 className={styles["form-input-login"]}
               />
             </div>
           </div>
-          <button type="submit" className={styles["btn-login"]}>
+          <button
+            type="submit"
+            className={styles["btn-login"]}
+            onClick={handleSubmit}
+          >
             Iniciar sesión
           </button>
         </div>
