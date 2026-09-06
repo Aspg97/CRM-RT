@@ -42,13 +42,13 @@ function HomePage() {
               <div className={styles["container-img"]}>
                 <img src={informe} alt="informes" width={90} />
               </div>
-              <p className={styles["text-item"]}>Ver Informes</p>
+              <p className={styles["text-item"]}>Informes</p>
             </Link>
             <Link className={styles["container-item"]} to="/documentos">
               <div className={styles["container-img"]}>
                 <img src={ordenDeTrabajo} alt="crear-documento" width={100} />
               </div>
-              <p className={styles["text-item"]}>Crear Documento</p>
+              <p className={styles["text-item"]}>Documentos</p>
             </Link>
             <Link className={styles["container-item"]} to="/pagos">
               <div className={styles["container-img"]}>
@@ -60,19 +60,19 @@ function HomePage() {
               <div className={styles["container-img"]}>
                 <img src={clientes} alt="clientes" width={100} />
               </div>
-              <p className={styles["text-item"]}>Ver Clientes</p>
+              <p className={styles["text-item"]}>Clientes</p>
             </Link>
             <Link className={styles["container-item"]} to="/proveedores">
               <div className={styles["container-img"]}>
                 <img src={proveedores} alt="proveedores" width={100} />
               </div>
-              <p className={styles["text-item"]}>Ver Proveedores</p>
+              <p className={styles["text-item"]}>Proveedores</p>
             </Link>
             <Link className={styles["container-item"]} to="/oferta">
               <div className={styles["container-img"]}>
                 <img src={oferta} alt="oferta" width={90} />
               </div>
-              <p className={styles["text-item"]}>Ver Oferta</p>
+              <p className={styles["text-item"]}>Ofertas</p>
             </Link>
           </div>
         </div>

@@ -1,0 +1,39 @@
+.container-title {
+  display: grid;
+  grid-template-columns: 100px calc(100% - 100px - 80px) 80px;
+  text-align: center;
+  padding: 15px;
+  background-color: var(--color-primary);
+}
+
+.title {
+  color: var(--color-text-dark);
+  font-family: var(--font-tittle);
+  font-size: 40px;
+  font-weight: normal;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.navegation {
+  background-color: var(--color-secondary);
+}
+
+.container-items {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.item {
+  color: var(--color-text-dark);
+  text-decoration: none;
+  list-style: none;
+  font-size: 14px;
+  padding: 5px 20px;
+}
+
+.active {
+  background-color: var(--color-select);
+  font-weight: bold;
+  color: var(--color-text-light);
+}

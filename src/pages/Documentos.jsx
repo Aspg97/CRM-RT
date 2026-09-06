@@ -1,5 +1,10 @@
+import BodyPageGen from "../components/BodyPageGen.jsx";
 function Documentos() {
-  return <div>Documentos</div>;
+  const contenido = () => {
+    return <p>Documentos</p>;
+  };
+
+  return <BodyPageGen title="Documentos" content={contenido()} />;
 }
 
 export default Documentos;

@@ -3,6 +3,23 @@
   --font-text: "quicksand", sans-serif;
 }
 
+:root {
+  --color-primary: #0731a6;
+  --color-secondary: #0059e6;
+  --color-select: #2197ff;
+  --color-metal-grey: linear-gradient(
+    135deg,
+    #2b2d42 0%,
+    /* Plomo oscuro base */ #8d99ae 25%,
+    /* Gris medio */ #edf2f4 48%,
+    /* Punto de luz / Reflejo metálico */ #6c757d 55%,
+    /* Transición a sombra */ #343a40 80%,
+    /* Sombra profunda */ #8d99ae 100% /* Reflejo final suave */
+  );
+  --color-text-dark: #ffffff;
+  --color-text-light: #000000;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,5 +28,18 @@
 
 body {
   font-family: var(--font-text);
-  font-size: 12px;
+  font-size: 15px;
+}
+
+.container-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+.body-item {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 150px 1fr;
 }
