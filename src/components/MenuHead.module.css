@@ -14,6 +14,11 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+.container-nav {
+  border-bottom: 5px solid transparent;
+  border-image: var(--color-metal-grey) 1;
+}
+
 .navegation {
   background-color: var(--color-secondary);
 }
