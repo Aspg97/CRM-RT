@@ -1,0 +1,19 @@
+.container-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+.body-item {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+
+.container-main {
+  background-image: url("../assets/backgorund_main.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

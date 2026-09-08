@@ -13,6 +13,7 @@
 .option-list {
   padding: 10px 0;
   cursor: pointer;
+  font-size: 14px;
 }
 
 .option-list span {

@@ -1,16 +1,17 @@
 import MenuHead from "../components/MenuHead.jsx";
 import Footer from "../components/Footer";
 import BarraOpciones from "./BarraOpciones.jsx";
+import styles from "./BodyPageGen.module.css";
 function BodyPageGen({ title, content, options, setOptions }) {
   return (
     <>
-      <div className="container-page">
+      <div className={styles["container-page"]}>
         <MenuHead title={title} />
-        <div className="body-item">
+        <div className={styles["body-item"]}>
           <div className="container-options">
             <BarraOpciones options={options} setOptions={setOptions} />
           </div>
-          <main>{content}</main>
+          <main className={styles["container-main"]}>{content}</main>
         </div>
         <Footer />
       </div>

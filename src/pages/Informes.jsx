@@ -3,20 +3,12 @@ import BodyPageGen from "../components/BodyPageGen.jsx";
 import { useState } from "react";
 
 function Informes() {
-  const [items, setItems] = useState([
-    { item: "Ver Informes", active: false },
-    { item: "Crear Informes", active: false },
-  ]);
+  const [items, setItems] = useState([{ item: "Ver Informes", active: false }]);
 
   const itemSelect = items.find((item) => item.active)?.item;
 
   const contenido = () => {
-    return (
-      <main>
-        {itemSelect === "Ver Informes" && <p>Ver Informe</p>}
-        {itemSelect === "Crear Informes" && <p>Crear Informe</p>}
-      </main>
-    );
+    return <div>{itemSelect === "Ver Informes" && <p>Ver Informe</p>}</div>;
   };
 
   return (
