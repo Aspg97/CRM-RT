@@ -1,8 +1,8 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import styles from "./MenuHead.module.css";
-import logo_RT from "../assets/logo_RT.png";
-import BtnLogout from "../components/BtnLogout";
+import logo_RT from "../../assets/logo_RT.png";
+import BtnLogout from "../atomicComponents/BtnLogout";
 
 function MenuHead(props) {
   const { title } = props;

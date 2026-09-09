@@ -1,5 +1,5 @@
 import { useState } from "react";
-import BodyPageGen from "../components/BodyPageGen.jsx";
+import BodyPageGen from "../../components/BodyPageGen";
 
 function Documentos() {
   const [items, setItems] = useState([

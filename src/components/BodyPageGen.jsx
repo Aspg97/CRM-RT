@@ -1,6 +1,6 @@
-import MenuHead from "../components/MenuHead.jsx";
-import Footer from "../components/Footer";
-import BarraOpciones from "./BarraOpciones.jsx";
+import MenuHead from "./structuralComponents/MenuHead.jsx";
+import Footer from "./structuralComponents/Footer.jsx";
+import BarraOpciones from "./structuralComponents/BarraOpciones.jsx";
 import styles from "./BodyPageGen.module.css";
 function BodyPageGen({ title, content, options, setOptions }) {
   return (

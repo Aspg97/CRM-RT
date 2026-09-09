@@ -1,5 +1,5 @@
 import styles from "./BarraOpciones.module.css";
-import imgSelect from "../assets/seleccionador.svg";
+import imgSelect from "../../assets/seleccionador.svg";
 
 function BarraOpciones({ options, setOptions }) {
   const handleOnClick = (nombreItem) => {

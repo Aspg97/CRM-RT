@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import { UserContext } from "../context/user.context";
+import { UserContext } from "../../context/user.context";
 import "./BtnLogout.css";
-import cerrar_sesion from "../assets/cerrar_sesion.svg";
+import cerrar_sesion from "../../assets/cerrar_sesion.svg";
 
 function BtnLogout() {
   const { logout } = useContext(UserContext);

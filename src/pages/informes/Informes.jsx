@@ -1,5 +1,5 @@
 import styles from "./Informes.module.css";
-import BodyPageGen from "../components/BodyPageGen.jsx";
+import BodyPageGen from "../../components/BodyPageGen";
 import { useState } from "react";
 
 function Informes() {

@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { UserContext } from "../context/user.context";
 import { Link, Navigate } from "react-router-dom";
 import styles from "./HomePage.module.css";
-import Footer from "../components/Footer";
+import Footer from "../components/structuralComponents/Footer";
 import logo_RT from "../assets/logo_RT.png";
 import clientes from "../assets/clientes.svg";
 import informe from "../assets/informe.svg";
@@ -10,7 +10,7 @@ import ordenDeTrabajo from "../assets/ordenDeTrabajo.svg";
 import pagos from "../assets/pagos.svg";
 import proveedores from "../assets/proveedores.svg";
 import oferta from "../assets/oferta.svg";
-import BtnLogout from "../components/BtnLogout";
+import BtnLogout from "../components/atomicComponents/BtnLogout";
 
 function HomePage() {
   const { user } = useContext(UserContext);

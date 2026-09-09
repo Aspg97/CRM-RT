@@ -1,5 +1,5 @@
 import { useState } from "react";
-import BodyPageGen from "../components/BodyPageGen.jsx";
+import BodyPageGen from "../../components/BodyPageGen";
 function Ofertas() {
   const [items, setItems] = useState([
     { item: "Registrar Oferta", active: false },

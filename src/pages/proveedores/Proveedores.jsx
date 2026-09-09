@@ -1,5 +1,5 @@
 import { useState } from "react";
-import BodyPageGen from "../components/BodyPageGen.jsx";
+import BodyPageGen from "../../components/BodyPageGen";
 function Proveedores() {
   const [items, setItems] = useState([
     { item: "Registrar Proveedor", active: false },

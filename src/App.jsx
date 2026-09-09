@@ -1,12 +1,12 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import HomePage from "./pages/HomePage";
-import Ofertas from "./pages/Ofertas";
-import Clientes from "./pages/Clientes";
-import Proveedores from "./pages/Proveedores";
-import Documentos from "./pages/Documentos";
-import Informes from "./pages/Informes";
-import Pagos from "./pages/Pagos";
+import Ofertas from "./pages/ofertas/Ofertas";
+import Clientes from "./pages/clientes/Clientes";
+import Proveedores from "./pages/proveedores/Proveedores";
+import Documentos from "./pages/documentos/Documentos";
+import Informes from "./pages/informes/Informes";
+import Pagos from "./pages/pagos/Pagos";
 import Ups from "./pages/Ups";
 import Login from "./pages/LogIn";
 
