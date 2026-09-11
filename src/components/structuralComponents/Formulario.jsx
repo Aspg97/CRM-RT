@@ -23,6 +23,9 @@ function Formulario({ title, inputs }) {
       <h3>{title}</h3>
       <form onSubmit={sendData} className={styles["form"]}>
         {addInput}
+        <div className={styles["container-btn-form"]}>
+          <button className={styles["btn-form"]}>Registrar</button>
+        </div>
       </form>
     </div>
   );

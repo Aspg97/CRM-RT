@@ -1,0 +1,25 @@
+.container-input {
+  border: none;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+}
+
+.label-form {
+  color: #fff;
+}
+
+.input-form {
+  padding: 5px;
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #000;
+  color: #fff;
+  font-size: 15px;
+}
+
+.input-form::placeholder {
+  color: #bbb;
+  font-style: italic;
+}
