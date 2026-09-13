@@ -1,20 +1,20 @@
 import Formulario from "../../../components/structuralComponents/Formulario";
 
-function RegistrarClientes() {
+function RegistrarProveedor() {
   const inputs = [
     {
-      label: "Nombre",
+      label: "Razón Social",
       type: "text",
-      placeholder: "Jorge",
-      name: "nom",
-      id: "inp-nom",
+      placeholder: "proveedor S.A.",
+      name: "razo",
+      id: "inp-razo",
     },
     {
-      label: "Teléfono",
+      label: "Contacto",
       type: "text",
       placeholder: "0999999999",
-      name: "telf",
-      id: "inp-telf",
+      name: "cont",
+      id: "inp-cont",
     },
     {
       label: "Dirección",
@@ -31,7 +31,13 @@ function RegistrarClientes() {
       id: "inp-mail",
     },
   ];
-  return <Formulario title={"Registrar Nuevo Cliente"} inputs={inputs} />;
+  return (
+    <Formulario
+      title={"Registrar Nuevo Proveedor"}
+      inputs={inputs}
+      options={[{ item: "hola" }]}
+    />
+  );
 }
 
-export default RegistrarClientes;
+export default RegistrarProveedor;

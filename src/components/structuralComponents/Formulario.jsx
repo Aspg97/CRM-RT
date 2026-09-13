@@ -1,7 +1,7 @@
 import styles from "./Formulario.module.css";
 import CustomInput from "../atomicComponents/CustomInput";
 
-function Formulario({ title, inputs }) {
+function Formulario({ title, inputs, options }) {
   const sendData = (e) => {
     e.preventDefault();
   };
@@ -15,6 +15,7 @@ function Formulario({ title, inputs }) {
         name={input.name}
         placeholder={input.placeholder}
         id={input.id}
+        options={options}
       />
     );
   });

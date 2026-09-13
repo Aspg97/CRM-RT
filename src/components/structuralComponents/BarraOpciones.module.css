@@ -4,6 +4,7 @@
   padding-top: 10px;
   text-align: center;
   color: var(--color-text-dark);
+  width: 150px;
 }
 
 .container-list-items {

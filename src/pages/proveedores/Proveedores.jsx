@@ -1,5 +1,6 @@
 import { useState } from "react";
 import BodyPageGen from "../../components/BodyPageGen";
+import RegistrarProveedor from "./subComponents/RegistrarProveedor";
 function Proveedores() {
   const [items, setItems] = useState([
     { item: "Registrar Proveedor", active: false },
@@ -10,10 +11,10 @@ function Proveedores() {
 
   const contenido = () => {
     return (
-      <div>
-        {itemSelect === "Registrar Proveedor" && <p>Registrar Proveedor</p>}
+      <>
+        {itemSelect === "Registrar Proveedor" && <RegistrarProveedor />}
         {itemSelect === "Ver Proveedores" && <p>Ver Proveedores</p>}
-      </div>
+      </>
     );
   };
   return (

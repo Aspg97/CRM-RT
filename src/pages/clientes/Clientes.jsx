@@ -11,10 +11,10 @@ function Clientes() {
 
   const contenido = () => {
     return (
-      <div>
+      <>
         {itemSelect === "Registrar Cliente" && <RegistrarClientes />}
         {itemSelect === "Ver Clientes" && <p>Ver Clientes</p>}
-      </div>
+      </>
     );
   };
   return (
