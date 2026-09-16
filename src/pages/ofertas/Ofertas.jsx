@@ -1,5 +1,6 @@
 import { useState } from "react";
 import BodyPageGen from "../../components/BodyPageGen";
+import RegistrarOfertas from "./subComponents/RegistrarOfertas";
 function Ofertas() {
   const [items, setItems] = useState([
     { item: "Registrar Oferta", active: false },
@@ -14,7 +15,7 @@ function Ofertas() {
   const contenido = () => {
     return (
       <div>
-        {itemSelect === "Registrar Oferta" && <p>Registrar Oferta</p>}
+        {itemSelect === "Registrar Oferta" && <RegistrarOfertas />}
         {itemSelect === "Ver Materiales" && <p>Ver Materiales</p>}
         {itemSelect === "Ver Productos" && <p>Ver Productos</p>}
         {itemSelect === "Ver Servicios" && <p>Ver Servicios</p>}

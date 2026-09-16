@@ -1,4 +1,5 @@
 import Formulario from "../../../components/structuralComponents/Formulario";
+import CustomInput from "../../../components/atomicComponents/CustomInput";
 
 function RegistrarClientes() {
   const inputs = [
@@ -7,31 +8,45 @@ function RegistrarClientes() {
       type: "text",
       placeholder: "Jorge",
       name: "nom",
-      id: "inp-nom",
+      id: "inp-c-nom",
     },
     {
       label: "Teléfono",
       type: "text",
       placeholder: "0999999999",
       name: "telf",
-      id: "inp-telf",
+      id: "inp-c-telf",
     },
     {
       label: "Dirección",
       type: "text",
       placeholder: "San Juan",
       name: "dir",
-      id: "inp-dir",
+      id: "inp-c-dir",
     },
     {
       label: "E-Mail",
       type: "text",
       placeholder: "asd@gmail.com",
       name: "mail",
-      id: "inp-mail",
+      id: "inp-c-mail",
     },
   ];
-  return <Formulario title={"Registrar Nuevo Cliente"} inputs={inputs} />;
+
+  const addInput = inputs.map((input) => {
+    return (
+      <CustomInput
+        key={input.id}
+        label={input.label}
+        type={input.type}
+        name={input.name}
+        placeholder={input.placeholder}
+        id={input.id}
+      />
+    );
+  });
+
+  return <Formulario title={"Registrar Nuevo Cliente"} content={addInput} />;
 }
 
 export default RegistrarClientes;
