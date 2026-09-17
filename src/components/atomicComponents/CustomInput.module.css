@@ -9,7 +9,8 @@
   color: #fff;
 }
 
-.input-form {
+.input-form,
+.select-form {
   padding: 5px;
   background: none;
   outline: none;
@@ -22,4 +23,9 @@
 .input-form::placeholder {
   color: #bbb;
   font-style: italic;
+}
+
+.select-form option {
+  color: #000;
+  font-family: var(--font-text);
 }

@@ -11,10 +11,10 @@ function Documentos() {
 
   const contenido = () => {
     return (
-      <div>
+      <>
         {itemSelect === "Crear Documento" && <p>Crear Documento</p>}
         {itemSelect === "Ver Documentos" && <p>Ver Documentos</p>}
-      </div>
+      </>
     );
   };
 

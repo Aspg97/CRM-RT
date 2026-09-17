@@ -42,7 +42,6 @@ function RegistrarPagos() {
     return (
       <>
         {addInput}
-
         <fieldset className={styles["container-input"]}>
           <label className={styles["label-form"]} htmlFor={"txt-p-mot"}>
             Descripción:

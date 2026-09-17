@@ -14,13 +14,13 @@ function Ofertas() {
 
   const contenido = () => {
     return (
-      <div>
+      <>
         {itemSelect === "Registrar Oferta" && <RegistrarOfertas />}
         {itemSelect === "Ver Materiales" && <p>Ver Materiales</p>}
         {itemSelect === "Ver Productos" && <p>Ver Productos</p>}
         {itemSelect === "Ver Servicios" && <p>Ver Servicios</p>}
         {itemSelect === "Ver Personalizados" && <p>Ver Personalizados</p>}
-      </div>
+      </>
     );
   };
   return (

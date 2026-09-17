@@ -68,7 +68,7 @@ function HomePage() {
               </div>
               <p className={styles["text-item"]}>Proveedores</p>
             </Link>
-            <Link className={styles["container-item"]} to="/oferta">
+            <Link className={styles["container-item"]} to="/Ofertas">
               <div className={styles["container-img"]}>
                 <img src={oferta} alt="oferta" width={90} />
               </div>

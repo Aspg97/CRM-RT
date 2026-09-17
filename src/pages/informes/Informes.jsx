@@ -8,7 +8,7 @@ function Informes() {
   const itemSelect = items.find((item) => item.active)?.item;
 
   const contenido = () => {
-    return <div>{itemSelect === "Ver Informes" && <p>Ver Informe</p>}</div>;
+    return <>{itemSelect === "Ver Informes" && <p>Ver Informe</p>}</>;
   };
 
   return (

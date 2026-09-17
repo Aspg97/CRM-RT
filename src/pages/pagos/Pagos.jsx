@@ -10,10 +10,10 @@ function Pagos() {
   const itemSelect = items.find((item) => item.active)?.item;
   const contenido = () => {
     return (
-      <div>
+      <>
         {itemSelect === "Registrar Pago" && <RegistrarPagos />}
         {itemSelect === "Ver Pagos" && <p>Ver Pagos</p>}
-      </div>
+      </>
     );
   };
 
