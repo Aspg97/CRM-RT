@@ -1,0 +1,18 @@
+.cont-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: #fff;
+  width: 70%;
+  border-radius: 3em;
+}
+
+.inp-search {
+  border: none;
+  height: 20px;
+  outline: none;
+  margin-left: 10px;
+  font-size: 15px;
+  width: 50%;
+}

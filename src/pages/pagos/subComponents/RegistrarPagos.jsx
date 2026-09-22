@@ -54,6 +54,22 @@ function RegistrarPagos() {
             value={text}
           />
         </fieldset>
+        <fieldset className={styles["container-input"]}>
+          <label className={styles["label-form"]} htmlFor="lt-o-tip">
+            Tipo:
+          </label>
+          <select
+            name="select-tip"
+            id="slt-o-tip"
+            className={styles["select-form"]}
+          >
+            <option value="-">-</option>
+            <option value="proveedor">Proveedor</option>
+            <option value="servBasic">Servicios Básicos</option>
+            <option value="tc">Tarjeta de Crédito</option>
+            <option value="varios">Varios</option>
+          </select>
+        </fieldset>
       </>
     );
   };

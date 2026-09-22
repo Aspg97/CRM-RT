@@ -11,6 +11,13 @@ function RegistrarClientes() {
       id: "inp-c-nom",
     },
     {
+      label: "C.I. / RUC:",
+      type: "text",
+      placeholder: "0000000000",
+      name: "ci",
+      id: "inp-c-ci",
+    },
+    {
       label: "Teléfono",
       type: "text",
       placeholder: "0999999999",

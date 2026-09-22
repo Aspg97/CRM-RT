@@ -1,6 +1,7 @@
 import { useState } from "react";
 import BodyPageGen from "../../components/BodyPageGen";
 import RegistrarClientes from "./subComponents/RegistrarClientes";
+import VerClientes from "./subComponents/VerClientes";
 function Clientes() {
   const [items, setItems] = useState([
     { item: "Registrar Cliente", active: false },
@@ -13,7 +14,7 @@ function Clientes() {
     return (
       <>
         {itemSelect === "Registrar Cliente" && <RegistrarClientes />}
-        {itemSelect === "Ver Clientes" && <p>Ver Clientes</p>}
+        {itemSelect === "Ver Clientes" && <VerClientes />}
       </>
     );
   };
