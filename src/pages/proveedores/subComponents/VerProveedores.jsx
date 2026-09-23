@@ -1,9 +1,8 @@
 import Tablas from "../../../components/structuralComponents/Tablas";
 
-function VerClientes() {
+function VerProveedores() {
   const titles = ["Razón Social", "Teléfono", "Dirección", "E-Mail"];
-
-  return <Tablas titles={titles} nombreTabla={"Listado de Clientes"} />;
+  return <Tablas titles={titles} nombreTabla={"Listado de Proveedores"} />;
 }
 
-export default VerClientes;
+export default VerProveedores;

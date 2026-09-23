@@ -1,6 +1,7 @@
 import { useState } from "react";
 import BodyPageGen from "../../components/BodyPageGen";
 import RegistrarPagos from "./subComponents/RegistrarPagos";
+import VerPagos from "./subComponents/VerPagos";
 
 function Pagos() {
   const [items, setItems] = useState([
@@ -12,7 +13,7 @@ function Pagos() {
     return (
       <>
         {itemSelect === "Registrar Pago" && <RegistrarPagos />}
-        {itemSelect === "Ver Pagos" && <p>Ver Pagos</p>}
+        {itemSelect === "Ver Pagos" && <VerPagos />}
       </>
     );
   };

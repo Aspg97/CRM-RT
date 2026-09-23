@@ -4,8 +4,9 @@
   align-items: center;
   padding: 5px;
   background-color: #fff;
-  width: 70%;
+  width: 85%;
   border-radius: 3em;
+  margin: 0 auto;
 }
 
 .inp-search {

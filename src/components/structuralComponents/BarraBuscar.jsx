@@ -18,6 +18,7 @@ function BarraBuscar() {
         value={txtInput}
         onChange={handleSearch}
         className={styles["inp-search"]}
+        autoFocus
       />
     </div>
   );
