@@ -1,9 +1,13 @@
 import { useState } from "react";
 import BodyPageGen from "../../components/BodyPageGen";
+import CrearRecibo from "./subComponents/CrearRecibo";
+import CrearCotizacion from "./subComponents/CrearCotizacion";
+import VerDocumentos from "./subComponents/VerDocumentos";
 
 function Documentos() {
   const [items, setItems] = useState([
-    { item: "Crear Documento", active: false },
+    { item: "Crear Recibo", active: false },
+    { item: "Crear Cotización", active: false },
     { item: "Ver Documentos", active: false },
   ]);
 
@@ -12,8 +16,9 @@ function Documentos() {
   const contenido = () => {
     return (
       <>
-        {itemSelect === "Crear Documento" && <p>Crear Documento</p>}
-        {itemSelect === "Ver Documentos" && <p>Ver Documentos</p>}
+        {itemSelect === "Crear Recibo" && <CrearRecibo />}
+        {itemSelect === "Crear Cotización" && <CrearCotizacion />}
+        {itemSelect === "Ver Documentos" && <VerDocumentos />}
       </>
     );
   };

@@ -1,6 +1,10 @@
 import { useState } from "react";
 import BodyPageGen from "../../components/BodyPageGen";
 import RegistrarOfertas from "./subComponents/RegistrarOfertas";
+import VerMateriales from "./subComponents/VerMateriales";
+import VerProductos from "./subComponents/VerProductos";
+import VerServicios from "./subComponents/VerServicios";
+import VerPersonalizados from "./subComponents/VerPersonalizados";
 function Ofertas() {
   const [items, setItems] = useState([
     { item: "Registrar Oferta", active: false },
@@ -16,10 +20,10 @@ function Ofertas() {
     return (
       <>
         {itemSelect === "Registrar Oferta" && <RegistrarOfertas />}
-        {itemSelect === "Ver Materiales" && <p>Ver Materiales</p>}
-        {itemSelect === "Ver Productos" && <p>Ver Productos</p>}
-        {itemSelect === "Ver Servicios" && <p>Ver Servicios</p>}
-        {itemSelect === "Ver Personalizados" && <p>Ver Personalizados</p>}
+        {itemSelect === "Ver Materiales" && <VerMateriales />}
+        {itemSelect === "Ver Productos" && <VerProductos />}
+        {itemSelect === "Ver Servicios" && <VerServicios />}
+        {itemSelect === "Ver Personalizados" && <VerPersonalizados />}
       </>
     );
   };

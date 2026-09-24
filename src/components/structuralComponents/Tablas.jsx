@@ -10,12 +10,13 @@ function Tablas({ titles, content, nombreTabla }) {
         <table className={styles["table"]}>
           <thead className={styles["head-table"]}>
             <tr>
-              <th>#</th>
-              <th>ID</th>
+              <th width={"12%"}>ID</th>
               {titles.map((title, index) => (
-                <th key={index}>{title}</th>
+                <th key={index} width={title.width}>
+                  {title.title}
+                </th>
               ))}
-              <th>Opciones</th>
+              <th width={"10%"}>Opciones</th>
             </tr>
           </thead>
           <tbody className={styles["body-table"]}></tbody>
